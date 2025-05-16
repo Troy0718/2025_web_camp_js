@@ -1,0 +1,87 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset200802.css");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #fbfbfb;
+}
+
+.cardSection {
+  width: 100%;
+  height: auto;
+  padding: 5% 10%;
+}
+.cardSection .cardWrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cardSection .cardWrap .card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.cardSection .cardWrap .card img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cardSection .cardWrap .card .date {
+  font-size: small;
+  margin: 1rem 0;
+}
+.cardSection .cardWrap .card .tag {
+  color: blue;
+  font-weight: 500;
+}
+.cardSection .cardWrap .card .tag .hotTag {
+  width: 32%;
+  border-radius: 999px;
+  padding: 1.5%;
+  font-size: xx-small;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+.cardSection .cardWrap .card .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cardSection .cardWrap .card .card-content h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  letter-spacing: 0.5px;
+  line-height: 1.6rem;
+}
+.cardSection .cardWrap .card .card-content .description {
+  font-size: x-small;
+  color: #575353;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+.cardSection .cardWrap .card .card-content .cardBtn {
+  display: block;
+  width: 32%;
+  border-radius: 999px;
+  color: #575353;
+  border: 1px solid black;
+  text-decoration: none;
+  font-size: small;
+  padding: 3%;
+  text-align: center;
+}/*# sourceMappingURL=all.css.map */
