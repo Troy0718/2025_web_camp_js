@@ -1,6 +1,6 @@
 let str = "";
 let allData = [];
-const cardWrap = document.querySelector(".cardWrap");
+const cardWrap = document.querySelector(".card-wrap");
 const dataUrl = "./js/articles.json";
 
 //取得卡片資料
@@ -18,29 +18,31 @@ async function getCardData() {
 async function renderCardWrap() {
   str = "";
   allData.forEach((item) => {
-    str += `<div class="card">
+    str += `<li class="card">
             <img
               src=${item.img}
+              class="card-img"
               alt="Article Image"
               loading="lazy"
             />
-             <p class="date">2024/10/11</p>
-              <p class="tag">${item.tags
+            <div class="card-content">
+             <time class='card-date'>${item.date}</time>
+              <p class="card-tag">${item.tags
                 .map((tag) =>
                   tag === "人氣文章"
-                    ? `<span class='hotTag'>人氣文章</span>`
-                    : `${tag}&nbsp;`
+                    ? `<a href="#" class='card-tag hot'>人氣文章</a>`
+                    : `<a href="#" class='card-tag'>${tag}</a>&nbsp;`
                 )
                 .join("")}</p>
-            <div class="card-content">
 
-              <h3>${item.title}</h3>
-              <p class="description">
+
+              <h3 class='card-title'>${item.title}</h3>
+              <p class="card-description">
                 ${item.description}
               </p>
-              <a class="cardBtn" href="#">閱讀內文</a>
+              <a class="card-btn" href="#">閱讀內文</a>
             </div>
-          </div>`;
+          </li>`;
   });
   cardWrap.innerHTML = str;
 }
