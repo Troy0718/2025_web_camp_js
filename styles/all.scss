@@ -10,7 +10,7 @@
 *::after {
   box-sizing: border-box;
   font-family: Noto Sans TC, sans-serif;
-  outline: solid 0.3px black !important;
+  // outline: solid 0.3px black !important;
 }
 a {
   text-decoration: none;
@@ -18,6 +18,7 @@ a {
 }
 body {
   margin: 0;
+  background-color: #fafafa;
 }
 
 .wrap {
@@ -27,7 +28,6 @@ body {
 }
 
 .navbar {
-  background-color: #fff;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -209,7 +209,7 @@ body {
 
 //Pagination
 .Pagination-wrap {
-  margin: 5% auto 10%;
+  margin: 0 auto;
   width: 250px;
   border-radius: 999px;
   background-color: #fff;
@@ -243,6 +243,8 @@ footer {
 .footer-content {
   padding-right: 5%;
   padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   justify-content: space-between;
   .footer-email {
@@ -293,9 +295,6 @@ footer {
     }
   }
 
-  .footer-content {
-    display: none;
-  }
   .search-container {
     padding-left: 1%;
     padding-right: 1%;
@@ -327,6 +326,12 @@ footer {
 
   .HeroSection-area:nth-child(2) .card {
     margin: 5% auto;
+  }
+  .Pagination-wrap {
+    margin: 5% auto 10%;
+  }
+  .footer-content {
+    display: none;
   }
   .footer-copyright {
     padding-top: 10%;
