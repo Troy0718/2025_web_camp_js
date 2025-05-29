@@ -24,13 +24,13 @@
         <div class="banner-area">
           <picture>
             <source
-              media="(max-width: 375px)"
+              media="(max-width: 768px)"
               srcset="
                 https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/mobile/index/Hero%20Section.png
               "
             />
             <source
-              media="(min-width: 376px)"
+              media="(min-width: 769px)"
               srcset="
                 https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section.png
               "
@@ -52,11 +52,25 @@
       <!--HeroSection-->
       <div class="HeroSection">
         <div class="HeroSection-area">
-          <img
-            class="HeroSection-img"
-            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/About%20Section.png"
-            alt=""
-          />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/mobile/blog/About%20Section.png
+              "
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="
+                https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/About%20Section.png
+              "
+            />
+            <img
+              class="HeroSection-img"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/About%20Section.png"
+              alt="說明文字"
+            />
+          </picture>
         </div>
         <div class="HeroSection-area">
           <div class="card">
@@ -69,7 +83,7 @@
 
               <h3 class="card-title">自學前端不用怕：從零開始的三大關鍵</h3>
               <p class="card-description">
-                嗨，我是Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享與工作，也常有讀者問：『我想轉職/自學前端，該從哪裡開始？』...
+                嗨，我是Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作...
               </p>
               <a class="card-btn" href="#">閱讀內文</a>
             </div>
@@ -149,7 +163,9 @@
           </span>
         </div>
         <div class="footer-copyright">
-          &copy; 2025 Alyse Wang. All rights reserved.
+          <a href="mailto:alysewang@hexschool.com"
+            >&copy; 2025 Alyse Wang. All rights reserved.</a
+          >
         </div>
       </footer>
     </div>

@@ -9,15 +9,19 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: Noto Sans TC;
-  // outline: solid 0.3px black !important;
+  font-family: Noto Sans TC, sans-serif;
+  outline: solid 0.3px black !important;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 body {
   margin: 0;
 }
 
 .wrap {
-  max-width: 1296px;
+  max-width: 1200;
   margin: 0 auto;
   background-color: #fbfbfb;
 }
@@ -32,21 +36,20 @@ body {
     color: #000;
     font-weight: 600;
     font-size: larger;
-    text-decoration: none;
   }
 }
 
 .banner {
   display: flex;
   flex-wrap: wrap;
-  // align-items: stretch;
+  align-items: stretch;
   border-bottom: 1px solid black;
   .banner-area {
     flex: 1;
   }
   .banner-img {
     width: 100%;
-    min-width: 300px;
+    min-width: 350px;
     height: auto;
     display: block;
   }
@@ -55,20 +58,25 @@ body {
     background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section2.png");
     display: flex;
     background-repeat: no-repeat;
-
     flex: 1;
     flex-direction: column;
     justify-content: center;
   }
   .banner-text {
-    color: blue;
-    padding-left: 25px;
+    color: #0027d5;
+    // padding-left: 25px;
     margin-bottom: 20px;
+    width: 300px;
+    text-align: right;
+    //--------------------
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
   .banner-text h1 {
     font-weight: 900;
     letter-spacing: 2px;
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -79,7 +87,8 @@ body {
 }
 
 .card {
-  width: 320px;
+  max-width: calc(33.3333% - 16px);
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,7 +96,7 @@ body {
   .card-img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
   }
   .card-date {
     font-size: small;
@@ -95,9 +104,8 @@ body {
     margin-bottom: 1rem;
   }
   .card-tag {
-    color: blue;
+    color: #0027d5;
     font-weight: 500;
-    text-decoration: none;
   }
   .hot {
     width: 32%;
@@ -105,7 +113,7 @@ body {
     padding: 1.5%;
     font-size: xx-small;
     text-align: center;
-    background-color: blue;
+    background-color: #0027d5;
     color: white;
   }
   .card-content {
@@ -133,8 +141,8 @@ body {
       border-radius: 999px;
       color: #575353;
       border: 1px solid black;
-      text-decoration: none;
-      font-size: small;
+
+      font-size: medium;
       padding: 3%;
       text-align: center;
     }
@@ -150,15 +158,16 @@ body {
       width: 100%;
       height: auto;
       display: block;
-      max-width: 600px;
+      object-fit: cover;
       min-width: 300px; // 加這一行可以避免太小
     }
     .card {
-      width: 355px;
-      margin-top: 120px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      min-width: 405px;
+      margin-top: 22%;
+      margin-left: 3%;
+      .card-description {
+        color: #000;
+      }
     }
   }
 }
@@ -167,12 +176,11 @@ body {
   border-top: #000 1px solid;
   width: 100%;
   height: auto;
-  padding: 6% 10%;
+  padding: 6% 5%;
 }
 //searchBar
 .search-container {
-  width: 100%;
-  max-width: 400px;
+  // width: 100%;
   position: relative;
   margin-bottom: 2rem;
 
@@ -186,6 +194,7 @@ body {
   .search-input {
     border: 1px solid #000;
     border-radius: 999px;
+    width: 355px;
     padding: 10px 0px 10px 30px;
   }
 }
@@ -200,7 +209,7 @@ body {
 
 //Pagination
 .Pagination-wrap {
-  margin: 0 auto;
+  margin: 5% auto 10%;
   width: 250px;
   border-radius: 999px;
   background-color: #fff;
@@ -212,15 +221,17 @@ body {
   justify-content: center;
   align-items: center;
   gap: 18px;
-  .page-item {
-    color: #000;
-  }
+
   .page-link {
     font-size: medium;
-    text-decoration: none;
+    color: #000;
   }
-  .active {
-    color: blue;
+  .active,
+  .page-link:active,
+  .page-link:hover,
+  .footer-link:hover,
+  .navbar-link:hover {
+    color: #0027d5;
   }
 }
 
@@ -230,7 +241,8 @@ footer {
 }
 
 .footer-content {
-  padding: 5% 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   display: flex;
   justify-content: space-between;
   .footer-email {
@@ -248,49 +260,77 @@ footer {
   padding: 1rem 0px;
 }
 
-@media (max-width: 375px) {
-  .wrap {
-    max-width: 375px;
-    margin: 0 auto;
-  }
-  .banner-text p {
-    font-size: 100px;
+@media (max-width: 768px) {
+  .banner {
+    .banner-text {
+      text-align: left;
+      width: auto;
+      padding: 4%;
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
   }
 
-  .card {
-    width: 370px;
-  }
   .card-section {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  .search-input {
-    width: 100%;
-  }
-
-  .HeroSection {
+    padding-top: 20%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    //---------
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .HeroSection-area {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* 置中內部的 .card */
-  }
-
-  .HeroSection-area .card {
-    width: 90%;
-    margin: 0 auto !important;
-  }
-
-  .HeroSection-area:nth-child(2) {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .card-wrap {
+    flex: row;
+    justify-content: center;
+    .card {
+      margin-bottom: 5%;
+    }
   }
 
   .footer-content {
     display: none;
+  }
+  .search-container {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .HeroSection {
+    margin-bottom: 5%;
+  }
+  .HeroSection-area:nth-child(2) .card,
+  .card-wrap .card {
+    width: 100%;
+    min-width: 355px;
+    display: flex;
+    justify-content: center;
+    .card-title {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+    .card-tag {
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+    }
+    .card-description {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      line-height: 1.5rem;
+    }
+  }
+
+  .HeroSection-area:nth-child(2) .card {
+    margin: 5% auto;
+  }
+  .footer-copyright {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-weight: 600;
   }
 }

@@ -36,7 +36,7 @@ async function renderCardWrap() {
                 .join("")}</p>
 
 
-              <h3 class='card-title'>${item.title}</h3>
+              <h1 class='card-title'>${item.title}</h1>
               <p class="card-description">
                 ${item.description}
               </p>
