@@ -22,7 +22,7 @@ body {
 }
 
 .wrap {
-  max-width: 1200;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: #fbfbfb;
 }
@@ -267,6 +267,7 @@ footer {
     .banner-text {
       text-align: left;
       width: auto;
+
       padding: 4%;
       h1 {
         font-size: 50px;
@@ -275,6 +276,9 @@ footer {
         font-size: 30px;
       }
     }
+  }
+  .banner .banner-area:nth-of-type(2) {
+    flex-basis: 100%;
   }
 
   .card-section {
