@@ -263,9 +263,6 @@ footer {
   .banner .banner-text p {
     font-size: 30px;
   }
-  .banner .banner-area:nth-of-type(2) {
-    flex-basis: 100%;
-  }
   .card-section {
     padding-top: 20%;
     padding-left: 0.5%;
@@ -312,6 +309,10 @@ footer {
     font-weight: 500;
     letter-spacing: 0.1px;
     line-height: 1.5rem;
+  }
+  .banner .banner-area:nth-of-type(2),
+  .HeroSection .HeroSection-area:first-child {
+    flex-basis: 100%;
   }
   .HeroSection-area:nth-child(2) .card {
     margin: 5% auto;

@@ -277,9 +277,6 @@ footer {
       }
     }
   }
-  .banner .banner-area:nth-of-type(2) {
-    flex-basis: 100%;
-  }
 
   .card-section {
     padding-top: 20%;
@@ -327,7 +324,10 @@ footer {
       line-height: 1.5rem;
     }
   }
-
+  .banner .banner-area:nth-of-type(2),
+  .HeroSection .HeroSection-area:first-child {
+    flex-basis: 100%;
+  }
   .HeroSection-area:nth-child(2) .card {
     margin: 5% auto;
   }
