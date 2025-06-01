@@ -64,7 +64,6 @@ body {
   }
   .banner-text {
     color: #0027d5;
-    // padding-left: 25px;
     margin-bottom: 20px;
     width: 300px;
     text-align: right;
@@ -114,7 +113,7 @@ body {
     font-size: xx-small;
     text-align: center;
     background-color: #0027d5;
-    color: white;
+    color: #fff;
   }
   .card-content {
     flex: 1;
@@ -226,11 +225,7 @@ body {
     font-size: medium;
     color: #000;
   }
-  .active,
-  .page-link:active,
-  .page-link:hover,
-  .footer-link:hover,
-  .navbar-link:hover {
+  .active {
     color: #0027d5;
   }
 }
@@ -260,6 +255,28 @@ footer {
   color: black;
   font-size: smaller;
   padding: 1rem 0px;
+}
+
+//hover,active
+.page-link:active,
+.page-link:hover,
+.footer-link:hover,
+.navbar-link:hover {
+  color: #0027d5;
+}
+
+.card {
+  .card-content .card-btn:hover {
+    background-color: #575353;
+    color: #fafafa;
+  }
+  .card-tag:hover {
+    color: #575353;
+  }
+  .card-tag.hot:hover {
+    background-color: #575353;
+    color: #fff;
+  }
 }
 
 @media (max-width: 768px) {

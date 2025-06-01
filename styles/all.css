@@ -109,7 +109,7 @@ body {
   font-size: xx-small;
   text-align: center;
   background-color: #0027d5;
-  color: white;
+  color: #fff;
 }
 .card .card-content {
   flex: 1;
@@ -216,11 +216,7 @@ body {
   font-size: medium;
   color: #000;
 }
-.Pagination .active,
-.Pagination .page-link:active,
-.Pagination .page-link:hover,
-.Pagination .footer-link:hover,
-.Pagination .navbar-link:hover {
+.Pagination .active {
   color: #0027d5;
 }
 
@@ -249,6 +245,25 @@ footer {
   color: black;
   font-size: smaller;
   padding: 1rem 0px;
+}
+
+.page-link:active,
+.page-link:hover,
+.footer-link:hover,
+.navbar-link:hover {
+  color: #0027d5;
+}
+
+.card .card-content .card-btn:hover {
+  background-color: #575353;
+  color: #fafafa;
+}
+.card .card-tag:hover {
+  color: #575353;
+}
+.card .card-tag.hot:hover {
+  background-color: #575353;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
