@@ -3,56 +3,56 @@
     "date": "2024/10/11",
     "tags": ["#React", "#入門基礎"],
     "title": "React入門不在迷惘：三步驟帶你上手核心概念",
-    "description": "你是否對React感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯師...",
+    "description": "你是否對React感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯師，我常遇到同學問我...",
     "img": "https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/photo4.png"
   },
   {
     "date": "2024/09/07",
     "tags": ["#作品集", "#求職攻略"],
     "title": "前端作品集打造指南：讓你的專案成為履歷亮點",
-    "description": "對正在求職的前端工程師而言，作品往往是第一個『說話』的利器。當面試官瀏覽你的網頁作...",
+    "description": "對正在求職的前端工程師而言，作品往往是第一個『說話』的利器。當面試官瀏覽你的網頁作品時，能夠快速了...",
     "img": "https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/photo1.png"
   },
   {
     "date": "2024/09/03",
     "tags": ["#CSS教學", "#視覺體驗"],
     "title": "CSS 魔法大揭秘：排版與設計的三大關鍵技巧",
-    "description": "在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需...",
+    "description": "在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時...",
     "img": "https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/photo2.png"
   },
   {
     "date": "2024/07/08",
     "tags": ["＃轉職工程師", "＃學習心法"],
     "title": "前端轉職必讀：從自學者到工程師的心路歷程",
-    "description": "能夠憑藉自學進入前端領域，聽起來令人振奮，但實際過程中可能遇到的挫折與疑慮，卻常常令...",
+    "description": "能夠憑藉自學進入前端領域，聽起來令人振奮，但實際過程中可能遇到的挫折與疑慮，卻常常令人猶豫。回想當初我...",
     "img": "https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/photo6.png"
   },
   {
     "date": "2024/07/06",
     "tags": ["#前端學習", "#工程師求職", "人氣文章"],
     "title": "面試題不再怕：破解常見難題的三大策略",
-    "description": "面試前端工程師時，你或許擔心被問到各種刁鑽的技術問題，或是擔憂無法在短時間內展現實力...",
+    "description": "面試前端工程師時，你或許擔心被問到各種刁鑽的技術問題，或是擔憂無法在短時間內展現實力。其實，許多面試...",
     "img": "https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/photo3.png"
   },
   {
     "date": "2024/06/29",
     "tags": ["＃Vue3", "＃框架教學"],
     "title": "Vue 3 新手指南：快速掌握 Composition API 與關鍵特色",
-    "description": "許多前端開發者對Vue一直情有獨鍾，因為它易上手又靈活，隨著Vue上線，Composition A...",
+    "description": "許多前端開發者對Vue一直情有獨鍾，因為它易上手又靈活，隨著Vue上線，Composition API的導入更是大...",
     "img": "https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/photo5.png"
   },
   {
     "date": "2024/05/04",
     "tags": ["#Git", "#協作流程"],
     "title": "Git 與版本控制：前端協作的必修課",
-    "description": "當你從一人開發晉升到多人合作，版本控制的好壞往往決定了專案的順暢度。Git不僅能記錄程...",
+    "description": "當你從一人開發晉升到多人合作，版本控制的好壞往往決定了專案的順暢度。Git不僅能記錄程式碼變動，更能確保...",
     "img": "https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/photo9.png"
   },
   {
     "date": "2024/05/01",
     "tags": ["#SEO", "#網頁曝光"],
     "title": "SEO 與前端最佳實踐：讓搜尋引擎看見你的網站",
-    "description": "即使你的網站擁有優美的介面與強大的功能，如果在搜尋引擎上找不到他，那就形同隱形。身為...",
+    "description": "即使你的網站擁有優美的介面與強大的功能，如果在搜尋引擎上找不到他，那就形同隱形。身為前端工程師，了解基...",
     "img": "https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/photo7.png"
   },
   {
@@ -73,7 +73,7 @@
     "date": "2024/02/17",
     "tags": ["#求職準備", "#品質保證"],
     "title": "掌握前端測試：從單元測試到端對端測試的完整攻略",
-    "description": "寫程式容易，但要確保程式在多種情境、裝置都能正常運行就沒那麼簡單了。這時『測試』便成...",
+    "description": "寫程式容易，但要確保程式在多種情境、裝置都能正常運行就沒那麼簡單了。這時『測試』便成了維持程式品質的關...",
     "img": "https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/photo10.png"
   }
 ]

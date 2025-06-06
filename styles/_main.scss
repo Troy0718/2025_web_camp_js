@@ -1,0 +1,269 @@
+.wrap {
+  max-width: 1296px;
+  margin: 0 auto;
+  background-color: #fbfbfb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  .navbar-link {
+    color: #000;
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  border-bottom: 1px solid black;
+  .banner-area {
+    flex: 1;
+  }
+  .banner-img {
+    width: 100%;
+    min-width: 350px;
+    height: auto;
+    display: block;
+  }
+
+  .banner-right {
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section2.png");
+    display: flex;
+    background-repeat: no-repeat;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner-text {
+    color: #0027d5;
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: right;
+    //--------------------
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .banner-text h1 {
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .banner-text p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.HeroSection {
+  display: flex;
+  flex-wrap: wrap;
+  .HeroSection-area {
+    flex: 1;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      // min-width: 300px; // 加這一行可以避免太小
+    }
+    .card {
+      max-width: 80%;
+      margin-top: 22%;
+      margin-left: 3%;
+      .card-description {
+        color: #000;
+      }
+      .card-btn {
+        width: 32%;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.card-section {
+  border-top: #000 1px solid;
+  width: 100%;
+  height: auto;
+  padding: 50px 130px;
+}
+
+//searchBar
+.search-container {
+  // width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 16px;
+    pointer-events: none;
+  }
+  .search-input {
+    border: 1px solid #000;
+    border-radius: 999px;
+    width: calc(33.3333% - 16px);
+    padding: 10px 0px 10px 30px;
+  }
+}
+
+//Pagination
+.Pagination-wrap {
+  margin: 0 auto;
+  width: 250px;
+  border-radius: 999px;
+  background-color: #fff;
+  padding: 10px 3px;
+}
+//Pagination
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+
+  .page-link {
+    font-size: 20px;
+    color: #000;
+  }
+  .active {
+    color: #0027d5;
+  }
+}
+
+//Footer
+footer {
+  border-top: #000 1px solid;
+}
+
+.footer-content {
+  align-items: center;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  .footer-email {
+    font-size: 20px;
+  }
+  .footer-link {
+    gap: 10px;
+  }
+  .footer-icon {
+    display: inline;
+    width: auto;
+    height: auto;
+  }
+}
+.footer-copyright {
+  background-color: #fff;
+  text-align: center;
+  color: black;
+  font-size: 10px;
+  padding: 15px 0px;
+}
+
+//hover,active
+.page-link:active,
+.page-link:hover,
+.footer-link:hover,
+.navbar-link:hover {
+  color: #0027d5;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    .banner-text {
+      text-align: left;
+      width: auto;
+      padding: 20px;
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .card-section {
+    padding-top: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+    //---------
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-wrap {
+    flex: row;
+    justify-content: center;
+    .card {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+  }
+
+  .search-container {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 80%;
+    .search-input {
+      width: 100%;
+    }
+  }
+  .HeroSection {
+    margin-bottom: 5%;
+  }
+  .HeroSection-area:nth-child(2) .card,
+  .card-wrap .card {
+    width: 100%;
+    min-width: 355px;
+    display: flex;
+    justify-content: center;
+    .card-title {
+      font-size: 23px;
+      line-height: 1.5;
+    }
+    .card-tag {
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
+    .card-description {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      line-height: 1.5;
+    }
+  }
+  .banner .banner-area:nth-of-type(2),
+  .HeroSection .HeroSection-area:first-child {
+    flex-basis: 100%;
+  }
+  .HeroSection-area:nth-child(2) .card {
+    margin: 5% auto;
+  }
+  .Pagination-wrap {
+    margin: 5% auto 10%;
+  }
+  .footer-content {
+    display: none;
+  }
+  .footer-copyright {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-weight: 600;
+  }
+}

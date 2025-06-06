@@ -1,11 +1,117 @@
-@import url("https://meyerweb.com/eric/tools/css/reset/reset200802.css");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dela+Gothic+One&family=Noto+Sans+TC:wght@100..900&display=swap");
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  font-family: Noto Sans TC, sans-serif;
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 a {
@@ -13,13 +119,112 @@ a {
   color: black;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: solid 0.3px black !important;
+}
+
 body {
   margin: 0;
   background-color: #fafafa;
+  font-weight: 500;
+  font-family: "Microsoft JhengHei, sans-serif";
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.card {
+  max-width: calc(33.3333% - 16px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card-img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.card .card-date {
+  font-size: small;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.card .card-tag {
+  color: #0027d5;
+  font-weight: 500;
+}
+.card .hot {
+  width: 32%;
+  border-radius: 999px;
+  padding: 1.5%;
+  font-size: xx-small;
+  text-align: center;
+  background-color: #0027d5;
+  color: #fff;
+}
+.card .card-content {
+  flex: 1;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card-content .card-title {
+  font-size: 15px;
+  margin: 0.5rem 0;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+.card .card-content .card-description {
+  font-size: x-small;
+  color: #575353;
+  line-height: 18px;
+  margin-bottom: 1rem;
+  text-overflow: ellipsis;
+  line-clamp: 2;
+  overflow: hidden;
+  white-space: wrap;
+}
+.card .card-content .card-btn {
+  display: block;
+  width: 32%;
+  border-radius: 999px;
+  color: #575353;
+  border: 1px solid black;
+  font-size: medium;
+  padding: 3%;
+  text-align: center;
+}
+
+.card .card-content .card-btn:hover {
+  background-color: #575353;
+  color: #fafafa;
+}
+.card .card-tag:hover {
+  color: #575353;
+}
+.card .card-tag.hot:hover {
+  background-color: #575353;
+  color: #fff;
 }
 
 .wrap {
-  max-width: 1200px;
+  max-width: 1296px;
   margin: 0 auto;
   background-color: #fbfbfb;
 }
@@ -28,12 +233,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 1rem 0;
+  padding: 15px 0;
 }
 .navbar .navbar-link {
   color: #000;
   font-weight: 600;
-  font-size: larger;
+  font-size: 30px;
 }
 
 .banner {
@@ -80,67 +285,6 @@ body {
   font-weight: 600;
 }
 
-.card {
-  max-width: calc(33.3333% - 16px);
-  min-width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.card .card-img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.card .card-date {
-  font-size: small;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.card .card-tag {
-  color: #0027d5;
-  font-weight: 500;
-}
-.card .hot {
-  width: 32%;
-  border-radius: 999px;
-  padding: 1.5%;
-  font-size: xx-small;
-  text-align: center;
-  background-color: #0027d5;
-  color: #fff;
-}
-.card .card-content {
-  flex: 1;
-  padding: 0.3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.card .card-content .card-title {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-  letter-spacing: 0.5px;
-  line-height: 1.6rem;
-}
-.card .card-content .card-description {
-  font-size: x-small;
-  color: #575353;
-  line-height: 1rem;
-  margin-bottom: 1rem;
-}
-.card .card-content .card-btn {
-  display: block;
-  width: 32%;
-  border-radius: 999px;
-  color: #575353;
-  border: 1px solid black;
-  font-size: medium;
-  padding: 3%;
-  text-align: center;
-}
-
 .HeroSection {
   display: flex;
   flex-wrap: wrap;
@@ -154,22 +298,25 @@ body {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  min-width: 300px;
 }
 .HeroSection .HeroSection-area .card {
-  min-width: 410px;
+  max-width: 80%;
   margin-top: 22%;
   margin-left: 3%;
 }
 .HeroSection .HeroSection-area .card .card-description {
   color: #000;
 }
+.HeroSection .HeroSection-area .card .card-btn {
+  width: 32%;
+  padding: 10px;
+}
 
 .card-section {
   border-top: #000 1px solid;
   width: 100%;
   height: auto;
-  padding: 6% 5%;
+  padding: 50px 130px;
 }
 
 .search-container {
@@ -186,16 +333,8 @@ body {
 .search-container .search-input {
   border: 1px solid #000;
   border-radius: 999px;
-  width: 355px;
+  width: calc(33.3333% - 16px);
   padding: 10px 0px 10px 30px;
-}
-
-.card-wrap {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 1rem;
 }
 
 .Pagination-wrap {
@@ -213,7 +352,7 @@ body {
   gap: 18px;
 }
 .Pagination .page-link {
-  font-size: medium;
+  font-size: 20px;
   color: #000;
 }
 .Pagination .active {
@@ -225,26 +364,32 @@ footer {
 }
 
 .footer-content {
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  align-items: center;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   display: flex;
   justify-content: space-between;
 }
 .footer-content .footer-email {
-  font-size: larger;
+  font-size: 20px;
 }
 .footer-content .footer-link {
   gap: 10px;
+}
+.footer-content .footer-icon {
+  display: inline;
+  width: auto;
+  height: auto;
 }
 
 .footer-copyright {
   background-color: #fff;
   text-align: center;
   color: black;
-  font-size: smaller;
-  padding: 1rem 0px;
+  font-size: 10px;
+  padding: 15px 0px;
 }
 
 .page-link:active,
@@ -254,34 +399,22 @@ footer {
   color: #0027d5;
 }
 
-.card .card-content .card-btn:hover {
-  background-color: #575353;
-  color: #fafafa;
-}
-.card .card-tag:hover {
-  color: #575353;
-}
-.card .card-tag.hot:hover {
-  background-color: #575353;
-  color: #fff;
-}
-
 @media (max-width: 768px) {
   .banner .banner-text {
     text-align: left;
     width: auto;
-    padding: 4%;
+    padding: 20px;
   }
   .banner .banner-text h1 {
     font-size: 50px;
   }
   .banner .banner-text p {
-    font-size: 30px;
+    font-size: 28px;
   }
   .card-section {
     padding-top: 20%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -292,11 +425,16 @@ footer {
     justify-content: center;
   }
   .card-wrap .card {
+    width: 100%;
     margin-bottom: 5%;
   }
   .search-container {
     padding-left: 1%;
     padding-right: 1%;
+    width: 80%;
+  }
+  .search-container .search-input {
+    width: 100%;
   }
   .HeroSection {
     margin-bottom: 5%;
@@ -310,20 +448,20 @@ footer {
   }
   .HeroSection-area:nth-child(2) .card .card-title,
   .card-wrap .card .card-title {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 23px;
+    line-height: 1.5;
   }
   .HeroSection-area:nth-child(2) .card .card-tag,
   .card-wrap .card .card-tag {
     font-size: 1.3rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
   .HeroSection-area:nth-child(2) .card .card-description,
   .card-wrap .card .card-description {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.1px;
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
   .banner .banner-area:nth-of-type(2),
   .HeroSection .HeroSection-area:first-child {

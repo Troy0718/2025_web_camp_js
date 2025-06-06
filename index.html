@@ -8,96 +8,95 @@
     <title>blog</title>
   </head>
   <body>
+    <nav>
+      <ul class="navbar">
+        <li class="navbar-item">
+          <a class="navbar-link" href="#">首頁</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#">部落格</a>
+        </li>
+      </ul>
+    </nav>
+    <!--banner-->
+    <div class="banner">
+      <div class="banner-area">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/mobile/index/Hero%20Section.png
+            "
+          />
+          <source
+            media="(min-width: 769px)"
+            srcset="
+              https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section.png
+            "
+          />
+          <img
+            class="banner-img"
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section.png"
+            alt="說明文字"
+          />
+        </picture>
+      </div>
+      <div class="banner-area banner-right">
+        <div class="banner-text">
+          <h1>BLOG</h1>
+          <p>前端工程師 ＆ 職涯咨詢師</p>
+        </div>
+      </div>
+    </div>
+    <!--HeroSection-->
+    <div class="HeroSection">
+      <div class="HeroSection-area">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/mobile/blog/About%20Section.png
+            "
+          />
+          <source
+            media="(min-width: 769px)"
+            srcset="
+              https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/About%20Section.png
+            "
+          />
+          <img
+            class="HeroSection-img"
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/About%20Section.png"
+            alt="說明文字"
+          />
+        </picture>
+      </div>
+      <div class="HeroSection-area">
+        <div class="card">
+          <div class="card-content">
+            <time class="card-date">2024/10/21</time>
+            <p class="card-tag">
+              <a href="#" class="card-tag">前端開發 X 職涯成長</a>&nbsp;
+              <a href="#" class="card-tag hot">最新文章</a>
+            </p>
+
+            <h3 class="card-title">自學前端不用怕：從零開始的三大關鍵</h3>
+            <p class="card-description">
+              嗨，我是Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：『我想轉職/自學前端，該從哪裡開始？』...
+            </p>
+            <a class="card-btn" href="#">閱讀內文</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="wrap">
-      <nav>
-        <ul class="navbar">
-          <li class="navbar-item">
-            <a class="navbar-link" href="#">首頁</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="#">部落格</a>
-          </li>
-        </ul>
-      </nav>
-      <!--banner-->
-      <div class="banner">
-        <div class="banner-area">
-          <picture>
-            <source
-              media="(max-width: 768px)"
-              srcset="
-                https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/mobile/index/Hero%20Section.png
-              "
-            />
-            <source
-              media="(min-width: 769px)"
-              srcset="
-                https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section.png
-              "
-            />
-            <img
-              class="banner-img"
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section.png"
-              alt="說明文字"
-            />
-          </picture>
-        </div>
-        <div class="banner-area banner-right">
-          <div class="banner-text">
-            <h1>BLOG</h1>
-            <p>前端工程師 ＆ 職涯咨詢師</p>
-          </div>
-        </div>
-      </div>
-      <!--HeroSection-->
-      <div class="HeroSection">
-        <div class="HeroSection-area">
-          <picture>
-            <source
-              media="(max-width: 768px)"
-              srcset="
-                https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/mobile/blog/About%20Section.png
-              "
-            />
-            <source
-              media="(min-width: 769px)"
-              srcset="
-                https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/About%20Section.png
-              "
-            />
-            <img
-              class="HeroSection-img"
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/About%20Section.png"
-              alt="說明文字"
-            />
-          </picture>
-        </div>
-        <div class="HeroSection-area">
-          <div class="card">
-            <div class="card-content">
-              <time class="card-date">2024/10/21</time>
-              <p class="card-tag">
-                <a href="#" class="card-tag">前端開發 X 職涯成長</a>&nbsp;
-                <a href="#" class="card-tag hot">最新文章</a>
-              </p>
-
-              <h3 class="card-title">自學前端不用怕：從零開始的三大關鍵</h3>
-              <p class="card-description">
-                嗨，我是Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作...
-              </p>
-              <a class="card-btn" href="#">閱讀內文</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!--cardSection-->
       <section class="card-section">
         <!--search bar-->
         <div class="search-container">
           <span class="search-icon"><i class="bi bi-search"></i></span>
           <input
-            type="text"
+            type="search"
             placeholder="搜尋你感興趣的文章"
             class="search-input"
           />
@@ -130,45 +129,51 @@
           </ul>
         </nav>
       </section>
-
-      <footer>
-        <div class="footer-content">
-          <span class="footer-email">alysewang@hexschool.com</span>
-          <span class="footer-link">
-            <a href="#"
-              ><img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/onlyIcon.png"
-                alt="youtube"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/onlyIcon-3.png"
-                alt="ig"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/onlyIcon-2.png"
-                alt="fb"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/onlyIcon-1.png"
-                alt="不知道"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/icons8-linkedin.png"
-                alt="linkdin"
-            /></a>
-          </span>
-        </div>
-        <div class="footer-copyright">
-          <a href="mailto:alysewang@hexschool.com"
-            >&copy; 2025 Alyse Wang. All rights reserved.</a
-          >
-        </div>
-      </footer>
     </div>
+    <footer>
+      <div class="footer-content">
+        <span class="footer-email"
+          ><a href="mailto:alysewang@hexschool.com">alysewang@hexschool.com</a>
+        </span>
+        <span class="footer-link">
+          <a href="#"
+            ><img
+              class="footer-icon"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/onlyIcon.png"
+              alt="youtube"
+          /></a>
+          <a href="#"
+            ><img
+              class="footer-icon"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/onlyIcon-3.png"
+              alt="ig"
+          /></a>
+          <a href="#"
+            ><img
+              class="footer-icon"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/onlyIcon-2.png"
+              alt="fb"
+          /></a>
+          <a href="#"
+            ><img
+              class="footer-icon"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/onlyIcon-1.png"
+              alt="不知道"
+          /></a>
+          <a href="#"
+            ><img
+              class="footer-icon"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/icons8-linkedin.png"
+              alt="linkdin"
+          /></a>
+        </span>
+      </div>
+      <div class="footer-copyright">
+        <a href="mailto:alysewang@hexschool.com"
+          >&copy; 2025 Alyse Wang. All rights reserved.</a
+        >
+      </div>
+    </footer>
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

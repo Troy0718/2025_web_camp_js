@@ -1,0 +1,23 @@
+//全站設定
+a {
+  text-decoration: none;
+  color: black;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: solid 0.3px black !important;
+}
+
+body {
+  margin: 0;
+  background-color: #fafafa;
+  font-weight: 500;
+  font-family: "Microsoft JhengHei, sans-serif";
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
