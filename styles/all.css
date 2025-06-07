@@ -201,12 +201,12 @@ img {
 }
 .card .card-content .card-btn {
   display: block;
-  width: 32%;
+  width: 90px;
   border-radius: 999px;
   color: #575353;
   border: 1px solid black;
   font-size: medium;
-  padding: 3%;
+  padding: 9px;
   text-align: center;
 }
 
@@ -307,7 +307,7 @@ img {
   color: #000;
 }
 .HeroSection .HeroSection-area .card .card-btn {
-  width: 32%;
+  width: 90px;
   padding: 10px;
 }
 
